@@ -44,7 +44,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Set environment variables if needed
-export FLASK_APP=app.py
 export FLASK_ENV=development
 
 # Initialize the database (if applicable)
@@ -56,12 +55,12 @@ python run.py
 
 ```
 ## Usage
-Run the main script run.py to start the application
+Run the main script run.py to start the application. Please replace the hostname with your local/public ip address.
 
-1. <hostname>:5000/apidocs/ - open the Swagger api dcoumentation.
-2. <hostname>:5000/v1/public/register - To register a new user
-3. <hostname>:5000/v1/public/login - To login with the user credentials
-4. <hostname>:5000/v1/private/logout - To logout the current user from the application
-5. <hostname>:5000/v1/private/summary - To get the overall Market summary
-6. <hostname>:5000/v1/private/<market>/summary - To get the particular market summary
+1. http://hostname:5000/apidocs/ - open the Swagger api dcoumentation.
+2. http://hostname:5000/v1/public/register - To register a new user
+3. http://hostname:5000/v1/public/login - To login with the user credentials
+4. http://hostname:5000/v1/private/logout - To logout the current user from the application
+5. http://hostname:5000/v1/private/summary - To get the overall Market summary
+6. http://hostname:5000/v1/private/<market>/summary - To get the particular market summary
 
